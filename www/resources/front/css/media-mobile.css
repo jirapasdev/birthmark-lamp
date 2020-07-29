@@ -1,0 +1,125 @@
+@media screen and (max-width: 600px) {
+  body {
+    /* background-color: olive; */
+    width: 100%;
+  }
+  .showcase-mobile{
+    display: flex;
+    flex-direction: column;
+  }
+  .center {
+    height: 40vh;
+  }
+  .text-showcase {
+    font-size: 38px;
+    color: black;
+    margin-bottom: 38px;
+    margin-top: 108px;
+  }
+  .composition__photo--p1 {
+    left: 3%;
+    top: -1rem;
+    width: 91%;
+  }
+  .composition__photo--p2, .composition__photo--p3{
+     display: none;
+  }
+  .text-clients {
+    font-size: 38px;
+    margin-top: 26%;
+  }
+  .client-text1 {
+    line-height: 3rem;
+    text-align: center;
+    color: #bdbcbc;
+    font-size: 16px;
+  }
+  .client-text2 {
+    line-height: 3rem;
+    font-size: 24px;
+   }
+  .client-tc {
+    font-size: 26px;
+   }
+  .text-contact {
+    font-size: 30px;
+    margin-top: 60%;
+   }
+  .col-6.contact-mobile {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .text-contact {
+    font-size: 38px;
+    margin-top: 129%;
+    margin-bottom: 93%;
+  }
+  .img-contact {
+    width: 100%;
+    margin-top: -85%;
+  }
+  .footer-mobile {
+    margin-top: 16%;
+   }
+   .tel , .email{
+    font-size: 18px;
+    color: black;
+  }
+
+  .form-control.custom {
+    line-height: 9rem;
+    height: calc(1.5em + 1.5rem + 2px);
+    box-shadow: 1px 3px 3px #d8d8d8;
+    border: 0px;
+    font-weight: 700;
+    color: black!important;
+    width: 78%;
+    font-size: 11px;
+  }
+  .arrow {
+    position: absolute;
+    margin-left: 63%;
+    padding-top: 8px;
+  }
+  .img-input {
+    width: 6%;
+  }
+  .form-group.row {
+    margin-top: 0px;
+  }
+  .row.footer-mobile {
+    margin-bottom: 4%;
+   }
+   
+
+
+
+   /* BLOG */
+   .progress{
+    display: none;
+  }
+  
+   .blog-share {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -5%;
+  }
+  .register{
+   font-size: 30px;
+  }
+  .col-2-moblie  {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .col-space{
+    display: none;
+  }
+  .mg-5{
+    margin-top: 5%;
+  }
+  .space {
+    margin-top: 13%;
+  }
+    
+
+}

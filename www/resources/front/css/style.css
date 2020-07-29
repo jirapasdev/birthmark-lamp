@@ -1,0 +1,345 @@
+body{
+  background-color: #f9f9f9;
+  color: #000000;
+}
+*{
+  padding: 0; border: 0; margin: 0; 
+  box-sizing: border-box;
+  list-style-type: none; /* Styled in normalize.css */
+  text-decoration: none;
+}
+.margin-space {
+  margin-top: 7%;
+}
+.center{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+.progress-bar {
+  background-color: #f9f9f9;
+}
+.progress {
+  background-color: #000000;
+  height: 4px;
+}
+.w-80{
+  width: 60%;
+}
+.text-showcase,.text-contact{
+  font-size: 54px;
+  color: black;
+  margin-bottom: 38px;
+}
+.text-clients{
+  font-size: 54px;
+  color: black;
+}
+.text-contact{
+  font-size: 54px;
+  color: black;
+  margin-bottom: 70px;
+}
+.img-input{
+  width: 60%;
+}
+.arrow{
+  position: absolute;
+  margin-left: 85%;
+  padding-top: 5px;
+}
+.form-control.custom{
+  line-height: 9rem;
+  height: calc(1.5em + 1.5rem + 2px);
+  box-shadow: 3px 5px 5px #d8d8d8;
+  border: 0px;
+  font-weight: 700;
+  color: black!important;
+}
+
+.client-text1{
+  text-align: center; 
+  color: #bdbcbc;
+  font-size: 24px;
+  line-height: 3rem;
+}
+.client-text2{
+  text-align: center; 
+  color: #bdbcbc;
+  line-height: 3rem;
+  font-size: 32px;
+}
+.client-tc{
+  text-align: center; 
+  color: black;
+  line-height: 3rem;
+}
+.blog-center{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showcase-group{
+  position: relative;
+  margin-top: 50px;
+}
+.composition-photo{
+  width: 65%;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  outline-offset: 2rem;
+}
+.composition__photo--p1 {
+  left: 4%;
+  top: 10rem;
+  width: 80%;
+}
+.composition__photo--p2 {
+  left: 10%;
+  top: 15%;
+  width: 80%;
+}
+.composition__photo--p3 {
+  left: 16%;
+  top: 9%;
+  width: 80%;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
+  width: 93%;
+  background-image: url("../img/Banner-HOME.png");
+  width: 100%;
+}
+.main-header a{
+  letter-spacing: .18rem;
+  text-transform: uppercase;
+}
+.masthead{
+  /* Both of these are needed to keep the #menu-toggle visible when nav list is active / open. */
+  position: relative;
+  z-index: 1000;
+  /********************************/
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+.masthead h1{
+  transition-delay: 450ms;
+}
+
+.menu-toggle{
+  cursor: pointer;
+  width: 55px;
+  z-index: 3;
+  position: fixed;
+  top: 4%;
+  left: 2%;
+}
+.menu-toggle div{
+  background-color: #676565;
+  border-radius: 25px;
+  /* box-shadow: 0px 3px 13px rgba(0,0,0,.3); */
+  height: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(.13,.24,.35,1.64);
+}
+.menu-toggle .one,
+.menu-toggle .two{
+  margin-bottom: 7px;
+}
+
+.main-contents{
+  flex: auto;
+}
+.main-contents h2{
+  letter-spacing: 1.5px;
+  margin-bottom: .6rem;
+  text-transform: uppercase;
+}
+.main-contents p{
+  font-size: 1.1rem;
+  letter-spacing: 1.7px;
+  line-height: 1.35;
+  color: #ccc;
+  transition-delay: 150ms;
+  transition-duration: 850ms;
+}
+/*** Just getting silly now ***************************/
+.main-footer span{
+/*      color: #ccc; */
+   transition-delay: 150ms;
+   transition-duration: 1350ms;
+}
+/*********************************************/
+.main-footer{
+  font-size: .9em;
+  letter-spacing: .18rem;
+  margin-bottom: 1.5rem;
+   margin-top: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/************* Style and animate the nav overlay ***********************/
+.main-nav-list::before,
+.main-nav-list::after{
+  background-color:#fff;
+  content:"";
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 0vw;
+  /* transition: all 100ms ease-in-out 300ms; */
+}
+.main-nav-list::before{
+  left: 0;
+}
+.main-nav-list::after{
+  right: 0;
+}
+.main-nav-list ul{
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  z-index: 2000;
+}
+.main-nav-list a{
+  display: block;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  opacity: 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition-delay: 130ms;
+}
+.main-nav-list .mobile-hide{/** Hide the link when viewing site on mobile devices. **/
+  display: none;
+}
+
+/************* Style the nav elements when active. ***********************/
+.masthead.active h1{
+  text-shadow: 0px 3px 3px rgba(0,0,0,.4);
+}
+
+.menu-toggle.active .one{
+  /* box-shadow: 0px 3px 13px rgba(0,0,0,.4); */
+  transform: translate(0, 14px) rotate(45deg);
+}
+
+.menu-toggle.active .two{
+  background-color: transparent;
+  box-shadow: none;
+  transform: translateX(-55px);
+}
+
+.menu-toggle.active .three{
+  /* box-shadow: 0px 3px 13px rgba(0,0,0,.4); */
+  transform: translate(0,-14px) rotate(-45deg);
+}
+
+.main-nav-list.active::before,
+.main-nav-list.active::after{
+  width: 100%;
+  opacity: 0.6;
+  /* transition-duration: 1000ms; */
+  background-color: #fff;
+  position: fixed;
+  z-index: 100;
+/*     transition-duration: 1000ms; */
+}
+.main-nav-list.active ul{
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  transition-delay: 560ms;
+  transition-duration: 240ms;
+  transition-timing-function: cubic-bezier(.1, .2, .3, 1.4);
+}
+
+.main-nav-list.active a{
+  transition-delay: 600ms;
+  opacity: 1;
+  color: black;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 6rem;
+}
+
+/*** Just getting silly now ***************************/
+.wrapper.active p{
+   color: rgb(50, 101, 134);
+             transition-delay: 150ms;
+   transition-duration: 350ms;
+}
+
+.main-footer.active span{
+   color: rgb(50, 101, 134);
+        transition-duration: 350ms;
+}
+
+section.showcase {
+  height: 100vh;
+  /* background-color: rosybrown; */
+}
+section.clients {
+  height:100vh;
+  /* background-color: rgb(154, 229, 231); */
+}
+section.contact {
+  height:100vh;
+  /* background-color: rgb(243, 255, 226); */
+}
+section.blog {
+  height:90vh;
+  /* background-color: rosybrown; */
+}
+.space{
+  margin-top: 40%;
+}
+.blog-share, .blog-link{
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-dark {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+.flex-end{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0px;
+}
+.img-contact{
+  width: 100%;
+}
+.tel{
+  margin-bottom: 24px;margin-top: 28px;
+}
+.row.footer-mobile {
+    margin-bottom: 1%;
+}
+.register{
+  text-align: center;margin-bottom: 5%;
+}
+
+
+
